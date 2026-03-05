@@ -1,0 +1,781 @@
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: octicons-link;
+                src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+            }
+        
+        .markdown-body {
+            -ms-text-size-adjust: 100;
+            -webkit-text-size-adjust: 100;
+            line-height: 1.5;
+            color: #24292e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        
+        .markdown-body .pl-c {
+            color: #6a737d;
+        }
+        
+        .markdown-body .pl-c1,
+        .markdown-body .pl-s .pl-v {
+            color: #005cc5;
+        }
+        
+        .markdown-body .pl-e,
+        .markdown-body .pl-en {
+            color: #6f42c1;
+        }
+        
+        .markdown-body .pl-smi,
+        .markdown-body .pl-s .pl-s1 {
+            color: #24292e;
+        }
+        
+        .markdown-body .pl-ent {
+            color: #22863a;
+        }
+        
+        .markdown-body .pl-k {
+            color: #d73a49;
+        }
+        
+        .markdown-body .pl-s,
+        .markdown-body .pl-pds,
+        .markdown-body .pl-s .pl-pse .pl-s1,
+        .markdown-body .pl-sr,
+        .markdown-body .pl-sr .pl-cce,
+        .markdown-body .pl-sr .pl-sre,
+        .markdown-body .pl-sr .pl-sra {
+            color: #032f62;
+        }
+        
+        .markdown-body .pl-v,
+        .markdown-body .pl-smw {
+            color: #e36209;
+        }
+        
+        .markdown-body .pl-bu {
+            color: #b31d28;
+        }
+        
+        .markdown-body .pl-ii {
+            color: #fafbfc;
+            background-color: #b31d28;
+        }
+        
+        .markdown-body .pl-c2 {
+            color: #fafbfc;
+            background-color: #d73a49;
+        }
+        
+        .markdown-body .pl-c2::before {
+            content: "^M";
+        }
+        
+        .markdown-body .pl-sr .pl-cce {
+            font-weight: bold;
+            color: #22863a;
+        }
+        
+        .markdown-body .pl-ml {
+            color: #735c0f;
+        }
+        
+        .markdown-body .pl-mh,
+        .markdown-body .pl-mh .pl-en,
+        .markdown-body .pl-ms {
+            font-weight: bold;
+            color: #005cc5;
+        }
+        
+        .markdown-body .pl-mi {
+            font-style: italic;
+            color: #24292e;
+        }
+        
+        .markdown-body .pl-mb {
+            font-weight: bold;
+            color: #24292e;
+        }
+        
+        .markdown-body .pl-md {
+            color: #b31d28;
+            background-color: #ffeef0;
+        }
+        
+        .markdown-body .pl-mi1 {
+            color: #22863a;
+            background-color: #f0fff4;
+        }
+        
+        .markdown-body .pl-mc {
+            color: #e36209;
+            background-color: #ffebda;
+        }
+        
+        .markdown-body .pl-mi2 {
+            color: #f6f8fa;
+            background-color: #005cc5;
+        }
+        
+        .markdown-body .pl-mdr {
+            font-weight: bold;
+            color: #6f42c1;
+        }
+        
+        .markdown-body .pl-ba {
+            color: #586069;
+        }
+        
+        .markdown-body .pl-sg {
+            color: #959da5;
+        }
+        
+        .markdown-body .pl-corl {
+            text-decoration: underline;
+            color: #032f62;
+        }
+        
+        .markdown-body .octicon {
+            display: inline-block;
+            vertical-align: text-top;
+            fill: currentColor;
+        }
+        
+        .markdown-body a {
+            background-color: transparent;
+        }
+        
+        .markdown-body a:active,
+        .markdown-body a:hover {
+            outline-width: 0;
+        }
+        
+        .markdown-body strong {
+            font-weight: inherit;
+        }
+        
+        .markdown-body strong {
+            font-weight: bolder;
+        }
+        
+        .markdown-body h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+        
+        .markdown-body img {
+            border-style: none;
+        }
+        
+        .markdown-body code,
+        .markdown-body kbd,
+        .markdown-body pre {
+            font-family: monospace, monospace;
+            font-size: 1em;
+        }
+        
+        .markdown-body hr {
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+        }
+        
+        .markdown-body input {
+            font: inherit;
+            margin: 0;
+        }
+        
+        .markdown-body input {
+            overflow: visible;
+        }
+        
+        .markdown-body [type="checkbox"] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+        
+        .markdown-body * {
+            box-sizing: border-box;
+        }
+        
+        .markdown-body input {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+        
+        .markdown-body a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .markdown-body a:hover {
+            text-decoration: underline;
+        }
+        
+        .markdown-body strong {
+            font-weight: 600;
+        }
+        
+        .markdown-body hr {
+            height: 0;
+            margin: 15px 0;
+            overflow: hidden;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #dfe2e5;
+        }
+        
+        .markdown-body hr::before {
+            display: table;
+            content: "";
+        }
+        
+        .markdown-body hr::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+        
+        .markdown-body table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        
+        .markdown-body td,
+        .markdown-body th {
+            padding: 0;
+        }
+        
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .markdown-body h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h3 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h4 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h5 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .markdown-body h6 {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .markdown-body p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .markdown-body blockquote {
+            margin: 0;
+        }
+        
+        .markdown-body ul,
+        .markdown-body ol {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .markdown-body ol ol,
+        .markdown-body ul ol {
+            list-style-type: lower-roman;
+        }
+        
+        .markdown-body ul ul ol,
+        .markdown-body ul ol ol,
+        .markdown-body ol ul ol,
+        .markdown-body ol ol ol {
+            list-style-type: lower-alpha;
+        }
+        
+        .markdown-body dd {
+            margin-left: 0;
+        }
+        
+        .markdown-body code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 12px;
+        }
+        
+        .markdown-body pre {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 12px;
+        }
+        
+        .markdown-body .octicon {
+            vertical-align: text-bottom;
+        }
+        
+        .markdown-body .pl-0 {
+            padding-left: 0 !important;
+        }
+        
+        .markdown-body .pl-1 {
+            padding-left: 4px !important;
+        }
+        
+        .markdown-body .pl-2 {
+            padding-left: 8px !important;
+        }
+        
+        .markdown-body .pl-3 {
+            padding-left: 16px !important;
+        }
+        
+        .markdown-body .pl-4 {
+            padding-left: 24px !important;
+        }
+        
+        .markdown-body .pl-5 {
+            padding-left: 32px !important;
+        }
+        
+        .markdown-body .pl-6 {
+            padding-left: 40px !important;
+        }
+        
+        .markdown-body::before {
+            display: table;
+            content: "";
+        }
+        
+        .markdown-body::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+        
+        .markdown-body>*:first-child {
+            margin-top: 0 !important;
+        }
+        
+        .markdown-body>*:last-child {
+            margin-bottom: 0 !important;
+        }
+        
+        .markdown-body a:not([href]) {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .markdown-body .anchor {
+            float: left;
+            padding-right: 4px;
+            margin-left: -20px;
+            line-height: 1;
+        }
+        
+        .markdown-body .anchor:focus {
+            outline: none;
+        }
+        
+        .markdown-body p,
+        .markdown-body blockquote,
+        .markdown-body ul,
+        .markdown-body ol,
+        .markdown-body dl,
+        .markdown-body table,
+        .markdown-body pre {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        
+        .markdown-body hr {
+            height: 0.25em;
+            padding: 0;
+            margin: 24px 0;
+            background-color: #e1e4e8;
+            border: 0;
+        }
+        
+        .markdown-body blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+        }
+        
+        .markdown-body blockquote>:first-child {
+            margin-top: 0;
+        }
+        
+        .markdown-body blockquote>:last-child {
+            margin-bottom: 0;
+        }
+        
+        .markdown-body kbd {
+            display: inline-block;
+            padding: 3px 5px;
+            font-size: 11px;
+            line-height: 10px;
+            color: #444d56;
+            vertical-align: middle;
+            background-color: #fafbfc;
+            border: solid 1px #c6cbd1;
+            border-bottom-color: #959da5;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #959da5;
+        }
+        
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3,
+        .markdown-body h4,
+        .markdown-body h5,
+        .markdown-body h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+        
+        .markdown-body h1 .octicon-link,
+        .markdown-body h2 .octicon-link,
+        .markdown-body h3 .octicon-link,
+        .markdown-body h4 .octicon-link,
+        .markdown-body h5 .octicon-link,
+        .markdown-body h6 .octicon-link {
+            color: #1b1f23;
+            vertical-align: middle;
+            visibility: hidden;
+        }
+        
+        .markdown-body h1:hover .anchor,
+        .markdown-body h2:hover .anchor,
+        .markdown-body h3:hover .anchor,
+        .markdown-body h4:hover .anchor,
+        .markdown-body h5:hover .anchor,
+        .markdown-body h6:hover .anchor {
+            text-decoration: none;
+        }
+        
+        .markdown-body h1:hover .anchor .octicon-link,
+        .markdown-body h2:hover .anchor .octicon-link,
+        .markdown-body h3:hover .anchor .octicon-link,
+        .markdown-body h4:hover .anchor .octicon-link,
+        .markdown-body h5:hover .anchor .octicon-link,
+        .markdown-body h6:hover .anchor .octicon-link {
+            visibility: visible;
+        }
+        
+        .markdown-body h1 {
+            padding-bottom: 0.3em;
+            font-size: 2em;
+            border-bottom: 1px solid #eaecef;
+        }
+        
+        .markdown-body h2 {
+            padding-bottom: 0.3em;
+            font-size: 1.5em;
+            border-bottom: 1px solid #eaecef;
+        }
+        
+        .markdown-body h3 {
+            font-size: 1.25em;
+        }
+        
+        .markdown-body h4 {
+            font-size: 1em;
+        }
+        
+        .markdown-body h5 {
+            font-size: 0.875em;
+        }
+        
+        .markdown-body h6 {
+            font-size: 0.85em;
+            color: #6a737d;
+        }
+        
+        .markdown-body ul,
+        .markdown-body ol {
+            padding-left: 2em;
+        }
+        
+        .markdown-body ul ul,
+        .markdown-body ul ol,
+        .markdown-body ol ol,
+        .markdown-body ol ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .markdown-body li {
+            word-wrap: break-all;
+        }
+        
+        .markdown-body li>p {
+            margin-top: 16px;
+        }
+        
+        .markdown-body li+li {
+            margin-top: 0.25em;
+        }
+        
+        .markdown-body dl {
+            padding: 0;
+        }
+        
+        .markdown-body dl dt {
+            padding: 0;
+            margin-top: 16px;
+            font-size: 1em;
+            font-style: italic;
+            font-weight: 600;
+        }
+        
+        .markdown-body dl dd {
+            padding: 0 16px;
+            margin-bottom: 16px;
+        }
+        
+        .markdown-body table {
+            display: block;
+            width: 100;
+            overflow: auto;
+        }
+        
+        .markdown-body table th {
+            font-weight: 600;
+        }
+        
+        .markdown-body table th,
+        .markdown-body table td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+        
+        .markdown-body table tr {
+            background-color: #fff;
+            border-top: 1px solid #c6cbd1;
+        }
+        
+        .markdown-body table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+        
+        .markdown-body img {
+            max-width: 100;
+            box-sizing: content-box;
+            background-color: #fff;
+        }
+        
+        .markdown-body img[align=right] {
+            padding-left: 20px;
+        }
+        
+        .markdown-body img[align=left] {
+            padding-right: 20px;
+        }
+        
+        .markdown-body code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
+        }
+        
+        .markdown-body pre {
+            word-wrap: normal;
+        }
+        
+        .markdown-body pre>code {
+            padding: 0;
+            margin: 0;
+            word-break: normal;
+            white-space: pre;
+            background: transparent;
+            border: 0;
+        }
+        
+        .markdown-body .highlight {
+            margin-bottom: 16px;
+        }
+        
+        .markdown-body .highlight pre {
+            margin-bottom: 0;
+            word-break: normal;
+        }
+        
+        .markdown-body .highlight pre,
+        .markdown-body pre {
+            padding: 16px;
+            overflow: auto;
+            font-size: 85;
+            line-height: 1.45;
+            background-color: #f6f8fa;
+            border-radius: 3px;
+        }
+        
+        .markdown-body pre code {
+            display: inline;
+            max-width: auto;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+            line-height: inherit;
+            word-wrap: normal;
+            background-color: transparent;
+            border: 0;
+        }
+        
+        .markdown-body .full-commit .btn-outline:not(:disabled):hover {
+            color: #005cc5;
+            border-color: #005cc5;
+        }
+        
+        .markdown-body kbd {
+            display: inline-block;
+            padding: 3px 5px;
+            font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            line-height: 10px;
+            color: #444d56;
+            vertical-align: middle;
+            background-color: #fafbfc;
+            border: solid 1px #d1d5da;
+            border-bottom-color: #c6cbd1;
+            border-radius: 3px;
+            box-shadow: inset 0 -1px 0 #c6cbd1;
+        }
+        
+        .markdown-body :checked+.radio-label {
+            position: relative;
+            z-index: 1;
+            border-color: #0366d6;
+        }
+        
+        .markdown-body .task-list-item {
+            list-style-type: none;
+        }
+        
+        .markdown-body .task-list-item+.task-list-item {
+            margin-top: 3px;
+        }
+        
+        .markdown-body .task-list-item input {
+            margin: 0 0.2em 0.25em -1.6em;
+            vertical-align: middle;
+        }
+        
+        .markdown-body hr {
+            border-bottom-color: #eee;
+        }
+        
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+        
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="markdown-body"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>// STORAGE
+function save(){try{localStorage.setItem(SK,JSON.stringify({vakken,uid,gid,at:new Date().toISOString()}));showSaved();}catch(e){toast(‘⚠️ Opslaan mislukt’);}}
+function dsave(){clearTimeout(saveTimer);saveTimer=setTimeout(save,600);}
+function load(){try{const r=localStorage.getItem(SK);if(!r)return false;const d=JSON.parse(r);if(!d.vakken||!d.vakken.length)return false;vakken=d.vakken;uid=d.uid||Math.max(…vakken.map(v=&gt;v.id))+1;gid=d.gid||Math.max(0,…vakken.flatMap(v=&gt;v.grades.map(g=&gt;g.id)))+1;return true;}catch(e){return false;}}
+function showSaved(){const i=document.getElementById(‘si’),l=document.getElementById(‘sl’);i.classList.add(‘saved’);l.textContent=‘Opgeslagen ✓’;setTimeout(()=&gt;{i.classList.remove(‘saved’);l.textContent=lastSavedStr();},2000);}
+function lastSavedStr(){try{const d=JSON.parse(localStorage.getItem(SK)||’{}’);if(!d.at)return’Nog niet opgeslagen’;const t=new Date(d.at);return<code>Opgeslagen ${t.getHours().toString().padStart(2,'0')}:${t.getMinutes().toString().padStart(2,'0')}</code>;}catch(e){return’’;}}</p>
+<p>// BACKUP
+function openBackup(){document.getElementById(‘importArea’).style.display=‘none’;document.getElementById(‘backupModal’).classList.add(‘show’);}
+function closeModal(id){document.getElementById(id).classList.remove(‘show’);}
+function exportData(){const b=new Blob([JSON.stringify({vakken,uid,gid},null,2)],{type:‘application/json’});const a=document.createElement(‘a’);a.href=URL.createObjectURL(b);a.download=‘CijferApp_backup_’+new Date().toLocaleDateString(‘nl-NL’).replace(///g,’-’)+’.json’;a.click();toast(‘✅ Back-up gedownload!’);}
+function showImport(){document.getElementById(‘importArea’).style.display=‘block’;}
+function importData(){try{const d=JSON.parse(document.getElementById(‘importText’).value.trim());if(!d.vakken)throw 0;pushH();vakken=d.vakken;uid=d.uid||1;gid=d.gid||1;openVakken=new Set();save();closeModal(‘backupModal’);rebuild();toast(‘✅ Back-up hersteld!’);}catch(e){toast(‘❌ Ongeldige back-up’);}}
+function confirmReset(){if(!confirm(‘Weet je zeker dat je ALLES wilt wissen?’))return;pushH();vakken=[];uid=1;gid=1;openVakken=new Set();localStorage.removeItem(SK);closeModal(‘backupModal’);rebuild();toast(‘🗑 Alles gewist’);}</p>
+<p>// HELPERS
+function avg(gs){const v=gs.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val)&amp;&amp;+g.wt&gt;0);if(!v.length)return null;return v.reduce((s,g)=&gt;s+(+g.val)<em>(+g.wt),0)/v.reduce((s,g)=&gt;s+(+g.wt),0);}
+function needed(gs,tgt,nw){const v=gs.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val)&amp;&amp;+g.wt&gt;0);const tw=v.reduce((s,g)=&gt;s+(+g.wt),0),ts=v.reduce((s,g)=&gt;s+(+g.val)</em>(+g.wt),0);return(tgt*(tw+nw)-ts)/nw;}
+function gc(v){if(v===null)return’var(–text3)’;if(v&gt;=PASS+1.5)return’var(–green)’;if(v&gt;=PASS)return’#5ee8a0’;if(v&gt;=PASS-.5)return’var(–orange)’;return’var(–red)’;}
+function gcls(v){if(v===null)return’cm’;if(v&gt;=PASS)return’cg’;if(v&gt;=PASS-.5)return’co’;return’cr’;}
+function fmt(v,d=1){return v===null?’—’:(+v).toFixed(d);}
+function esc(s){return String(s).replace(/&amp;/g,’&amp;’).replace(/&lt;/g,’&lt;’).replace(/&gt;/g,’&gt;’).replace(/”/g,’&quot;’);}
+function clone(o){return JSON.parse(JSON.stringify(o));}
+function pushH(){undoH.push(clone(vakken));if(undoH.length&gt;30)undoH.shift();document.getElementById(‘undoBtn’).disabled=false;}
+function undo(){if(!undoH.length)return;vakken=undoH.pop();if(!undoH.length)document.getElementById(‘undoBtn’).disabled=true;openVakken=new Set([…openVakken].filter(id=&gt;vakken.find(v=&gt;v.id===id)));save();rebuild();toast(‘↩ Ongedaan gemaakt’);}
+function toast(msg){const t=document.getElementById(‘toast’);t.textContent=msg;t.classList.add(‘show’);setTimeout(()=&gt;t.classList.remove(‘show’),2500);}</p>
+<p>// CRUD
+function addVak(){pushH();const id=uid++;vakken.push({id,name:<code>Vak ${vakken.length+1}</code>,color:COLS[vakken.length%COLS.length],grades:[]});openVakken.add(id);dsave();rebuild();setTimeout(()=&gt;{const i=document.querySelector(<code>#vc-${id} .vni</code>);if(i){i.focus();i.select();}},50);}
+function delVak(id){if(!confirm(‘Vak verwijderen?’))return;pushH();vakken=vakken.filter(v=&gt;v.id!==id);openVakken.delete(id);save();rebuild();toast(‘🗑 Vak verwijderd’);}
+function addGrade(vid){pushH();const vak=vakken.find(v=&gt;v.id===vid);if(!vak)return;const id=gid++;vak.grades.push({id,desc:’’,val:’’,wt:‘1’});dsave();const gl=document.querySelector(<code>#vc-${vid} .grades-list</code>);const gh=document.querySelector(<code>#vc-${vid} .gh</code>);if(!gh){rebuildBody(vid);}else{const nl=document.querySelector(<code>#vc-${vid} .ngl</code>);if(nl)nl.remove();const row=mkRow(vid,vak.grades[vak.grades.length-1]);gl.appendChild(row);setTimeout(()=&gt;row.querySelector(’.gin:first-child’).focus(),30);}updVak(vid);updSum();}
+function delGrade(vid,gid2){pushH();const vak=vakken.find(v=&gt;v.id===vid);if(!vak)return;vak.grades=vak.grades.filter(g=&gt;g.id!==gid2);const row=document.getElementById(<code>gr-${vid}-${gid2}</code>);if(row)row.remove();if(!vak.grades.length){const gh=document.querySelector(<code>#vc-${vid} .gh</code>);if(gh)gh.remove();const gl=document.querySelector(<code>#vc-${vid} .grades-list</code>);if(gl)gl.remove();const b=document.querySelector(<code>#vc-${vid} .vb</code>);if(b&amp;&amp;!b.querySelector(’.ngl’)){const l=document.createElement(‘div’);l.className=‘ngl’;l.style.cssText=‘text-align:center;padding:16px;color:var(–text3);font-size:13px;’;l.textContent=‘Geen cijfers — voeg ze hieronder toe’;b.insertBefore(l,b.querySelector(’.agb’));}}dsave();updVak(vid);updSum();}</p>
+<p>// FIELD HANDLERS (no re-render — fixes keyboard disappearing)
+function onDesc(vid,gid2,v){const vak=vakken.find(x=&gt;x.id===vid);if(!vak)return;const g=vak.grades.find(g=&gt;g.id===gid2);if(g){g.desc=v;dsave();}const l=document.querySelector(<code>#chl-${vid}-${gid2}</code>);if(l)l.textContent=v||‘Toets’;}
+function onVal(vid,gid2,v){const vak=vakken.find(x=&gt;x.id===vid);if(!vak)return;const g=vak.grades.find(g=&gt;g.id===gid2);if(!g)return;g.val=v;dsave();updPill(vid,gid2,v);updVak(vid);updSum();doPredict();calcScen();}
+function onWt(vid,gid2,v){const vak=vakken.find(x=&gt;x.id===vid);if(!vak)return;const g=vak.grades.find(g=&gt;g.id===gid2);if(!g)return;g.wt=v;dsave();updVak(vid);updSum();doPredict();calcScen();}
+function onName(vid,v){const vak=vakken.find(x=&gt;x.id===vid);if(vak){vak.name=v;dsave();updPredSel();updScenName(vid,v);if(document.getElementById(‘tv-overview’).classList.contains(‘active’))renderOv();}}</p>
+<p>// TARGETED UPDATES
+function updPill(vid,gid2,v){const p=document.getElementById(<code>pill-${vid}-${gid2}</code>);if(!p)return;const n=v!==’’&amp;&amp;!isNaN(+v)?+v:null;const c=gc(n);p.style.background=c+‘22’;p.style.color=c;p.textContent=n!==null?n.toFixed(1):’—’;}
+function updVak(vid){const vak=vakken.find(v=&gt;v.id===vid);if(!vak)return;const a=avg(vak.grades);const ae=document.querySelector(<code>#vc-${vid} .va</code>);if(ae){ae.textContent=fmt(a);ae.style.color=gc(a);}const fl=vak.grades.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val));const sl=document.querySelector(<code>#vc-${vid} .vsl</code>);if(sl)sl.textContent=<code>${fl.length} cijfer${fl.length!==1?'s':''}</code>;updStats(vid);const fi=document.querySelector(<code>#vc-${vid} .vfi</code>);if(fi)fi.innerHTML=footInfo(vak,a);rebuildChart(vid);}
+function footInfo(vak,a){if(a===null)return’Voeg cijfers toe om te berekenen’;if(a&gt;=PASS)return<code>✅ Voldoende! Huidig: &lt;strong&gt;${a.toFixed(2)}&lt;/strong&gt;</code>;const n=needed(vak.grades,PASS,1);return<code>⚠️ Voor een 5,5: nog &lt;strong&gt;${Math.min(10,Math.max(1,n)).toFixed(1)}&lt;/strong&gt; nodig (weging 1)</code>;}
+function updStats(vid){const vak=vakken.find(v=&gt;v.id===vid);if(!vak)return;const fl=vak.grades.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val));const a=avg(vak.grades);const hi=fl.length?Math.max(…fl.map(g=&gt;+g.val)):null;const lo=fl.length?Math.min(…fl.map(g=&gt;+g.val)):null;const s=document.querySelector(<code>#vc-${vid} .vsr</code>);if(!s)return;const sa=s.querySelector(’.sa’);if(sa){sa.textContent=fmt(a,2);sa.style.color=gc(a);}const sh=s.querySelector(’.shi’);if(sh)sh.textContent=fmt(hi);const sl=s.querySelector(’.slo’);if(sl){sl.textContent=fmt(lo);sl.style.color=gc(lo);}const sc=s.querySelector(’.sco’);if(sc)sc.textContent=fl.length;}
+function rebuildChart(vid){const vak=vakken.find(v=&gt;v.id===vid);if(!vak)return;const fl=vak.grades.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val));const crs=document.querySelector(<code>#vc-${vid} .crs</code>);const cw=document.querySelector(<code>#vc-${vid} .vct</code>);if(!crs||!cw){if(fl.length)rebuildBody(vid);return;}if(!fl.length){cw.style.display=‘none’;return;}cw.style.display=‘block’;crs.innerHTML=fl.map(g=&gt;{const p=Math.max(4,(+g.val/10)*100);const c=gc(+g.val);return<code>&lt;div class=&quot;cr2&quot;&gt;&lt;div class=&quot;cl&quot; id=&quot;chl-${vid}-${g.id}&quot; title=&quot;${esc(g.desc||'Toets')}&quot;&gt;${esc(g.desc||'Toets')}&lt;/div&gt;&lt;div class=&quot;ct&quot;&gt;&lt;div class=&quot;cf&quot; style=&quot;width:${p}%;background:${c};&quot;&gt;${(+g.val).toFixed(1)}&lt;/div&gt;&lt;div class=&quot;cpl&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code>;}).join(’’);}
+function updScenName(vid,name){const e=document.querySelector(<code>#sc-${vid} .svn</code>);if(e)e.textContent=name;}</p>
+<p>// FULL REBUILD
+function mkRow(vid,g){const v=g.val!==’’&amp;&amp;!isNaN(+g.val)?+g.val:null;const c=gc(v);const d=document.createElement(‘div’);d.className=‘gr’;d.id=<code>gr-${vid}-${g.id}</code>;d.innerHTML=<code>&lt;input type=&quot;text&quot; class=&quot;gin&quot; placeholder=&quot;Omschrijving...&quot; value=&quot;${esc(g.desc)}&quot; oninput=&quot;onDesc(${vid},${g.id},this.value)&quot;&gt;&lt;input type=&quot;number&quot; class=&quot;gin num&quot; placeholder=&quot;—&quot; min=&quot;1&quot; max=&quot;10&quot; step=&quot;0.1&quot; value=&quot;${esc(g.val)}&quot; oninput=&quot;onVal(${vid},${g.id},this.value)&quot;&gt;&lt;input type=&quot;number&quot; class=&quot;gin num&quot; placeholder=&quot;1&quot; min=&quot;0.1&quot; max=&quot;20&quot; step=&quot;0.5&quot; value=&quot;${esc(g.wt)}&quot; oninput=&quot;onWt(${vid},${g.id},this.value)&quot;&gt;&lt;div class=&quot;gp&quot; id=&quot;pill-${vid}-${g.id}&quot; style=&quot;background:${c}22;color:${c};&quot;&gt;${v!==null?v.toFixed(1):'—'}&lt;/div&gt;&lt;button class=&quot;db&quot; onclick=&quot;delGrade(${vid},${g.id})&quot;&gt;✕&lt;/button&gt;</code>;return d;}
+function rebuildBody(vid){const vak=vakken.find(v=&gt;v.id===vid);if(!vak)return;const b=document.querySelector(<code>#vc-${vid} .vb</code>);if(!b)return;const a=avg(vak.grades);const fl=vak.grades.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val));const hi=fl.length?Math.max(…fl.map(g=&gt;+g.val)):null;const lo=fl.length?Math.min(…fl.map(g=&gt;+g.val)):null;const chartH=fl.map(g=&gt;{const p=Math.max(4,(+g.val/10)*100);const c=gc(+g.val);return<code>&lt;div class=&quot;cr2&quot;&gt;&lt;div class=&quot;cl&quot; id=&quot;chl-${vid}-${g.id}&quot; title=&quot;${esc(g.desc||'Toets')}&quot;&gt;${esc(g.desc||'Toets')}&lt;/div&gt;&lt;div class=&quot;ct&quot;&gt;&lt;div class=&quot;cf&quot; style=&quot;width:${p}%;background:${c};&quot;&gt;${(+g.val).toFixed(1)}&lt;/div&gt;&lt;div class=&quot;cpl&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code>;}).join(’’);b.innerHTML=<code>&lt;div class=&quot;vsr&quot;&gt;&lt;div class=&quot;vst&quot;&gt;&lt;div class=&quot;vsv sa&quot; style=&quot;color:${gc(a)}&quot;&gt;${fmt(a,2)}&lt;/div&gt;&lt;div class=&quot;vsl2&quot;&gt;Gemiddelde&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;vst&quot;&gt;&lt;div class=&quot;vsv shi&quot; style=&quot;color:var(--green)&quot;&gt;${fmt(hi)}&lt;/div&gt;&lt;div class=&quot;vsl2&quot;&gt;Hoogste&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;vst&quot;&gt;&lt;div class=&quot;vsv slo&quot; style=&quot;color:${gc(lo)}&quot;&gt;${fmt(lo)}&lt;/div&gt;&lt;div class=&quot;vsl2&quot;&gt;Laagste&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;vst&quot;&gt;&lt;div class=&quot;vsv sco&quot; style=&quot;color:var(--blue2)&quot;&gt;${fl.length}&lt;/div&gt;&lt;div class=&quot;vsl2&quot;&gt;Cijfers&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;${vak.grades.length?</code><!-- raw HTML omitted --><!-- raw HTML omitted -->Omschrijving<!-- raw HTML omitted --><!-- raw HTML omitted -->Cijfer<!-- raw HTML omitted --><!-- raw HTML omitted -->Weging<!-- raw HTML omitted --><!-- raw HTML omitted -->Status<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><code>:</code><!-- raw HTML omitted -->Geen cijfers — voeg ze hieronder toe<!-- raw HTML omitted --><code>}&lt;button class=&quot;agb&quot; onclick=&quot;addGrade(${vid})&quot;&gt;＋ Voeg cijfer toe&lt;/button&gt;${fl.length?</code><!-- raw HTML omitted --><!-- raw HTML omitted -->Cijfers visualisatie<!-- raw HTML omitted --><!-- raw HTML omitted -->${chartH}<!-- raw HTML omitted --><!-- raw HTML omitted --><code>:''}&lt;div class=&quot;vf&quot;&gt;&lt;div class=&quot;vfi&quot;&gt;${footInfo(vak,a)}&lt;/div&gt;&lt;button class=&quot;dvb&quot; onclick=&quot;delVak(${vid})&quot;&gt;🗑 Verwijder&lt;/button&gt;&lt;/div&gt;</code>;const gl=b.querySelector(’.grades-list’);if(gl)vak.grades.forEach(g=&gt;gl.appendChild(mkRow(vid,g)));}
+function renderVakken(){const el=document.getElementById(‘vakkenList’);if(!vakken.length){el.innerHTML=’<!-- raw HTML omitted --><!-- raw HTML omitted -->📚<!-- raw HTML omitted --><!-- raw HTML omitted -->Nog geen vakken<!-- raw HTML omitted --><!-- raw HTML omitted -->Klik op “+ Vak toevoegen” om te beginnen<!-- raw HTML omitted --><!-- raw HTML omitted -->’;return;}el.innerHTML=vakken.map((vak,vi)=&gt;{const isOpen=openVakken.has(vak.id);const a=avg(vak.grades);const fl=vak.grades.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val));return<code>&lt;div class=&quot;vc&quot; id=&quot;vc-${vak.id}&quot; style=&quot;animation-delay:${vi*.05}s&quot;&gt;&lt;div class=&quot;vh&quot; onclick=&quot;toggleVak(${vak.id})&quot;&gt;&lt;div class=&quot;vs&quot; style=&quot;background:${vak.color}&quot;&gt;&lt;/div&gt;&lt;div class=&quot;vn&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;vni&quot; value=&quot;${esc(vak.name)}&quot; placeholder=&quot;Vaknaam...&quot; onclick=&quot;event.stopPropagation()&quot; oninput=&quot;onName(${vak.id},this.value)&quot;&gt;&lt;div class=&quot;vsl&quot;&gt;${fl.length} cijfer${fl.length!==1?'s':''}&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;va&quot; style=&quot;color:${gc(a)}&quot;&gt;${fmt(a)}&lt;/div&gt;&lt;div class=&quot;vch ${isOpen?'open':''}&quot;&gt;▼&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;vb ${isOpen?'open':''}&quot;&gt;&lt;/div&gt;&lt;/div&gt;</code>;}).join(’’);vakken.forEach(vak=&gt;rebuildBody(vak.id));}
+function toggleVak(id){const b=document.querySelector(<code>#vc-${id} .vb</code>);const c=document.querySelector(<code>#vc-${id} .vch</code>);if(!b)return;const o=b.classList.contains(‘open’);if(o){b.classList.remove(‘open’);c&amp;&amp;c.classList.remove(‘open’);openVakken.delete(id);}else{b.classList.add(‘open’);c&amp;&amp;c.classList.add(‘open’);openVakken.add(id);}}
+function rebuild(){renderVakken();updSum();updPredSel();renderScen();if(document.getElementById(‘tv-overview’).classList.contains(‘active’))renderOv();document.getElementById(‘sl’).textContent=lastSavedStr();}</p>
+<p>// SUMMARY
+function updSum(){const avgs=vakken.map(v=&gt;avg(v.grades)).filter(a=&gt;a!==null);const tot=avgs.length?avgs.reduce((s,a)=&gt;s+a,0)/avgs.length:null;const pass=avgs.filter(a=&gt;a&gt;=PASS).length;const fail=avgs.filter(a=&gt;a&lt;PASS).length;const hi=avgs.length?Math.max(…avgs):null;const hv=hi!==null?vakken.find(v=&gt;{const a=avg(v.grades);return a!==null&amp;&amp;Math.abs(a-hi)&lt;.001;}):null;document.getElementById(‘sAvg’).textContent=fmt(tot);document.getElementById(‘sAvg’).className=‘sc-val ‘+gcls(tot);document.getElementById(‘sSub’).textContent=avgs.length?<code>gemiddelde over ${avgs.length} vak${avgs.length!==1?'ken':''}</code>:‘Voeg vakken toe’;document.getElementById(‘sPass’).textContent=pass;document.getElementById(‘sFail’).textContent=fail;document.getElementById(‘sTotal’).textContent=avgs.length;document.getElementById(‘sHigh’).textContent=fmt(hi);document.getElementById(‘sHighSub’).textContent=hv?hv.name:’—’;}</p>
+<p>// PREDICT
+function updPredSel(){const s=document.getElementById(‘pVak’);const cur=s.value;s.innerHTML=’<!-- raw HTML omitted -->— Kies een vak —<!-- raw HTML omitted -->’+vakken.map(v=&gt;<code>&lt;option value=&quot;${v.id}&quot; ${v.id==cur?'selected':''}&gt;${esc(v.name)}&lt;/option&gt;</code>).join(’’);}
+function doPredict(){const vid=+document.getElementById(‘pVak’).value;const tgt=+document.getElementById(‘pTarget’).value;const wt=+document.getElementById(‘pWeight’).value;const box=document.getElementById(‘pResult’);if(!vid||isNaN(tgt)||isNaN(wt)||wt&lt;=0){box.classList.remove(‘show’);return;}const vak=vakken.find(v=&gt;v.id===vid);if(!vak){box.classList.remove(‘show’);return;}const n=needed(vak.grades,tgt,wt);const cur=avg(vak.grades);box.classList.add(‘show’);const rn=document.getElementById(‘pRN’);const rd=document.getElementById(‘pRD’);const pf=document.getElementById(‘pPF’);let col,pct,txt;if(n&lt;=1){rn.textContent=‘≤ 1.0 ✅’;col=‘var(–green)’;pct=100;txt=<code>Je haalt al een ${tgt.toFixed(1)} ongeacht je toetscijfer. Huidig: ${fmt(cur,2)}.</code>;}else if(n&gt;10){rn.textContent=’&gt; 10 ❌’;col=‘var(–red)’;pct=8;txt=<code>Niet meer haalbaar met huidige cijfers. Huidig: ${fmt(cur,2)}.</code>;}else{rn.textContent=n.toFixed(2);col=n&lt;=7?‘var(–green)’:n&lt;=8.5?‘var(–orange)’:‘var(–red)’;pct=Math.max(5,((10-n)/9)*100);txt=<code>Je hebt een ${n.toFixed(2)} nodig (weging ${wt}) voor een ${tgt.toFixed(1)} in ${vak.name}. Huidig: ${fmt(cur,2)}.</code>;}rn.style.color=col;rd.textContent=txt;pf.style.width=pct+’%’;pf.style.background=col;}</p>
+<p>// SCENARIO
+function renderScen(){const el=document.getElementById(‘scenCards’);if(!vakken.length){el.innerHTML=’<!-- raw HTML omitted -->Voeg eerst vakken toe.<!-- raw HTML omitted -->’;return;}el.innerHTML=vakken.map(vak=&gt;{const cur=avg(vak.grades);return<code>&lt;div class=&quot;svc&quot; id=&quot;sc-${vak.id}&quot;&gt;&lt;div class=&quot;svh&quot;&gt;&lt;div class=&quot;svd&quot; style=&quot;background:${vak.color}&quot;&gt;&lt;/div&gt;&lt;div class=&quot;svn&quot;&gt;${esc(vak.name)}&lt;/div&gt;&lt;div class=&quot;svc2&quot;&gt;Huidig: &lt;b style=&quot;color:${gc(cur)}&quot;&gt;${fmt(cur)}&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;sff&quot;&gt;&lt;div class=&quot;sfl&quot;&gt;&lt;label&gt;Verwacht nieuw cijfer&lt;/label&gt;&lt;input type=&quot;number&quot; class=&quot;gin num&quot; id=&quot;sv-${vak.id}&quot; placeholder=&quot;—&quot; min=&quot;1&quot; max=&quot;10&quot; step=&quot;0.1&quot; oninput=&quot;calcScen()&quot;&gt;&lt;/div&gt;&lt;div class=&quot;sfl&quot;&gt;&lt;label&gt;Weging van deze toets&lt;/label&gt;&lt;input type=&quot;number&quot; class=&quot;gin num&quot; id=&quot;sw-${vak.id}&quot; value=&quot;1&quot; min=&quot;0.1&quot; max=&quot;10&quot; step=&quot;0.5&quot; oninput=&quot;calcScen()&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;sr2&quot;&gt;&lt;div class=&quot;srl&quot;&gt;Nieuw gemiddelde dit vak&lt;/div&gt;&lt;div class=&quot;srn&quot; id=&quot;sr-${vak.id}&quot; style=&quot;color:var(--text3)&quot;&gt;—&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</code>;}).join(’’);calcScen();}
+function calcScen(){let tot=0,cnt=0,fails=0;vakken.forEach(vak=&gt;{const ve=document.getElementById(<code>sv-${vak.id}</code>);const we=document.getElementById(<code>sw-${vak.id}</code>);const re=document.getElementById(<code>sr-${vak.id}</code>);if(!ve)return;const nv=parseFloat(ve.value),nw=parseFloat(we.value)||1;const na=(!isNaN(nv)&amp;&amp;nv&gt;=1&amp;&amp;nv&lt;=10)?avg([…vak.grades,{val:nv,wt:nw}]):avg(vak.grades);if(re){re.textContent=fmt(na,2);re.style.color=gc(na);}if(na!==null){tot+=na;cnt++;if(na&lt;PASS)fails++;}});const el=document.getElementById(‘scenTotal’);if(!cnt){el.textContent=’—’;el.style.color=‘var(–text3)’;return;}const a=tot/cnt;el.textContent=a.toFixed(2)+(fails&gt;0?<code> (${fails} onvoldoende)</code>:’ ✅’);el.style.color=gc(a);}</p>
+<p>// OVERVIEW
+function renderOv(){const el=document.getElementById(‘ovContent’);if(!vakken.length){el.innerHTML=’<!-- raw HTML omitted -->Nog geen vakken.<!-- raw HTML omitted -->’;return;}const bars=vakken.map(vak=&gt;{const a=avg(vak.grades);const p=a!==null?Math.max(4,(a/10)*100):0;const c=gc(a);return<code>&lt;div class=&quot;fcw&quot;&gt;&lt;div class=&quot;fck&quot;&gt;&lt;div class=&quot;fcf&quot; style=&quot;height:${p}%;background:${c};&quot;&gt;&lt;div class=&quot;fcfl&quot; style=&quot;color:${c}&quot;&gt;${fmt(a)}&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;fcpl&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;fcl&quot;&gt;${esc(vak.name)}&lt;/div&gt;&lt;/div&gt;</code>;}).join(’’);const cards=vakken.map((vak,vi)=&gt;{const a=avg(vak.grades);const fl=vak.grades.filter(g=&gt;g.val!==’’&amp;&amp;!isNaN(+g.val));const p=a!==null?Math.max(4,(a/10)*100):0;const isP=a!==null&amp;&amp;a&gt;=PASS;const pb=isP?‘rgba(16,217,130,.12)’:a!==null?‘rgba(244,63,94,.12)’:‘var(–s3)’;const pc=isP?‘var(–green)’:a!==null?‘var(–red)’:‘var(–text3)’;const gl=fl.slice(0,5).map(g=&gt;<code>&lt;div class=&quot;ogr&quot;&gt;&lt;span style=&quot;color:var(--text2);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap&quot;&gt;${esc(g.desc||'Toets')}&lt;/span&gt;&lt;span style=&quot;font-family:'Clash Display',sans-serif;font-weight:700;color:${gc(+g.val)};margin-left:8px&quot;&gt;${(+g.val).toFixed(1)}&lt;/span&gt;&lt;span style=&quot;color:var(--text3);font-size:11px;margin-left:5px&quot;&gt;×${g.wt}&lt;/span&gt;&lt;/div&gt;</code>).join(’’);const more=fl.length&gt;5?<code>&lt;div style=&quot;font-size:11px;color:var(--text3);margin-top:5px&quot;&gt;+${fl.length-5} meer...&lt;/div&gt;</code>:’’;return<code>&lt;div class=&quot;oc&quot; style=&quot;animation-delay:${vi*.05}s&quot;&gt;&lt;div class=&quot;ot&quot;&gt;&lt;div class=&quot;od&quot; style=&quot;background:${vak.color}&quot;&gt;&lt;/div&gt;&lt;div class=&quot;on&quot;&gt;${esc(vak.name)}&lt;/div&gt;&lt;div class=&quot;oa&quot; style=&quot;color:${gc(a)}&quot;&gt;${fmt(a)}&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size:12px;color:var(--text3)&quot;&gt;${fl.length} cijfer${fl.length!==1?'s':''}&lt;/div&gt;&lt;div class=&quot;ob&quot;&gt;&lt;div class=&quot;obf&quot; style=&quot;width:${p}%;background:${gc(a)}&quot;&gt;&lt;/div&gt;&lt;div class=&quot;opl&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;display:flex;align-items:center;justify-content:space-between;margin-bottom:10px&quot;&gt;&lt;span class=&quot;op&quot; style=&quot;background:${pb};color:${pc}&quot;&gt;${a!==null?(isP?'Voldoende':'Onvoldoende'):'Geen data'}&lt;/span&gt;&lt;span style=&quot;font-size:11px;color:var(--text3)&quot;&gt;grens 5,5&lt;/span&gt;&lt;/div&gt;${gl}${more}&lt;/div&gt;</code>;}).join(’’);el.innerHTML=<code>&lt;div class=&quot;fcc&quot;&gt;&lt;div class=&quot;fct&quot;&gt;📊 Gemiddelden per vak&lt;/div&gt;&lt;div class=&quot;fcb&quot;&gt;${bars}&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;og&quot;&gt;${cards}&lt;/div&gt;</code>;}</p>
+<p>// TABS
+function switchTab(tab,btn){document.querySelectorAll(’.tb’).forEach(b=&gt;b.classList.remove(‘active’));btn.classList.add(‘active’);document.querySelectorAll(’.tv’).forEach(v=&gt;v.classList.remove(‘active’));document.getElementById(‘tv-’+tab).classList.add(‘active’);if(tab===‘predict’){updPredSel();renderScen();doPredict();}if(tab===‘overview’)renderOv();}</p>
+<p>// INIT
+(function(){const loaded=load();if(!loaded){const addV=(name,color)=&gt;{const id=uid++;vakken.push({id,name,color,grades:[]});return id;};const setG=(id,list)=&gt;{const v=vakken.find(x=&gt;x.id===id);if(v)v.grades=list.map((r,i)=&gt;({id:gid++,desc:r[0],val:r[1],wt:r[2]}));};const w=addV(‘Wiskunde’,’#3d7eff’);const n=addV(‘Nederlands’,’#10d982’);const e=addV(‘Engels’,’#8b5cf6’);setG(w,[[‘Toets H1’,‘7.2’,‘1’],[‘Toets H2’,‘5.8’,‘1’],[‘Proefwerk’,‘6.5’,‘2’]]);setG(n,[[‘Schrijfopdracht’,‘6.8’,‘1’],[‘Grammatica’,‘4.9’,‘1’]]);setG(e,[[‘Listening test’,‘8.1’,‘1’],[‘Essay’,‘7.5’,‘2’]]);openVakken.add(w);}else{if(vakken.length)openVakken.add(vakken[0].id);}rebuild();document.getElementById(‘sl’).textContent=loaded?lastSavedStr():‘Demodata — voeg jouw eigen vakken toe’;})();
+<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+</div>
+    </body>
+</html>
